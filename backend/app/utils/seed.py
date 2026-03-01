@@ -163,7 +163,7 @@ def seed_database():
     admin = User.query.filter_by(email="admin@kbon.io").first()
     if not admin:
         admin = User(email="admin@kbon.io", role="admin")
-        admin.set_password("admin123")
+        admin.set_password("nannam4")
         db.session.add(admin)
         db.session.commit()
         logger.info("Created admin user: admin@kbon.io")

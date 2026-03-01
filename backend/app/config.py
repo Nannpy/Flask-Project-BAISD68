@@ -5,8 +5,8 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 class BaseConfig:
-    SECRET_KEY = os.getenv("SECRET_KEY", "change-me-in-production")
-    JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY", "jwt-change-me")
+    SECRET_KEY = os.getenv("SECRET_KEY", "nannam1")
+    JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY", "nannam2")
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(hours=1)
     JWT_TOKEN_LOCATION = ["cookies"]
     JWT_COOKIE_SECURE = False  # True in production with HTTPS

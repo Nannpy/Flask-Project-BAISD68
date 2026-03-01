@@ -6,7 +6,7 @@ services:
     environment:
       POSTGRES_DB: kbon_db
       POSTGRES_USER: kbon
-      POSTGRES_PASSWORD: kbon_password
+      POSTGRES_PASSWORD: nannam3
     volumes:
       - pgdata:/var/lib/postgresql/data
     ports:
@@ -23,9 +23,9 @@ services:
     restart: unless-stopped
     environment:
       FLASK_ENV: production
-      DATABASE_URL: postgresql://kbon:kbon_password@postgres:5432/kbon_db
-      SECRET_KEY: ${SECRET_KEY:-change-me-in-production}
-      JWT_SECRET_KEY: ${JWT_SECRET_KEY:-jwt-change-me-in-production}
+      DATABASE_URL: postgresql://kbon:nannam3@postgres:5432/kbon_db
+      SECRET_KEY: ${SECRET_KEY:-nannam1}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:-nannam2}
       CORS_ORIGINS: http://localhost:3000,http://localhost
     depends_on:
       postgres:
