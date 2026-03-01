@@ -1,5 +1,7 @@
 # Kbon — AI-Powered Smart Farming Platform
 
+Link : kbonsite.com
+
 A production-ready AgriTech corporate website with **Next.js 14+** frontend and **Flask REST API** backend.
 
 ## Architecture
@@ -165,6 +167,10 @@ python -m pytest tests/ -v
 # Frontend build check
 cd frontend
 npm run build
+
+# run web in local
+cd Flask-Project-BAISD68
+docker compose up -d
 ```
 
 ## License
