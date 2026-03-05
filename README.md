@@ -1,7 +1,5 @@
 # Kbon — AI-Powered Smart Farming Platform
 
-Link : kbonsite.com
-
 A production-ready AgriTech corporate website with **Next.js 14+** frontend and **Flask REST API** backend.
 
 ## Architecture
